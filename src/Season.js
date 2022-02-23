@@ -1,7 +1,7 @@
 import React from "react";
 import { formatDistanceToNowStrict } from "date-fns";
 
-import "./Season.css";
+import "./css/Season.css";
 import data from "./data.json";
 
 function Season({ name }) {
@@ -16,12 +16,13 @@ function Season({ name }) {
     { unit: "day", addSuffix: true }
   );
   return (
-    <div className="Season-root">
-      <span role="img" aria-label={name} className="Season-icon">
+    <div className="season-div">
+      <span className="season-title">Current season</span>
+      <span role="img" aria-label={name} className="season-icon">
         {season.icon}
       </span>
-      <h1 className="Season-title">{season.name}</h1>
-      <p className="Season-content">{distance}</p>
+      <h1 className="season-title">{season.name}</h1>
+      <p className="season-content">{distance}</p>
     </div>
   );
 }

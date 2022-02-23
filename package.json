@@ -2,9 +2,6 @@
   "name": "les4saisons",
   "version": "0.1.0",
   "private": true,
-  "repository": {
-    "url": "git@github.com:quibaritaenperdresatrompe/les4saisons.git"
-  },
   "license": "MIT",
   "source": "src/index.html",
   "scripts": {

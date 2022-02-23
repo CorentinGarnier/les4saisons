@@ -1,23 +1,27 @@
-.Season-root {
+.season-div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.Season-title {
+.season-title {
   margin: 0;
 }
 
-.Season-subtitle {
+.season-subtitle {
   margin: 0;
 }
 
-.Season-content {
+.season-content {
   margin-top: 16px;
 }
 
-.Season-icon {
+.season-icon {
   font-size: 64px;
   padding: 8px;
+}
+
+hr {
+  width: 100%;
 }

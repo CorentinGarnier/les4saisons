@@ -1,14 +1,10 @@
 import React from "react";
-import { useTheme } from "react-jss";
+import "./css/Button.css";
 
-import useStyles from "./ThemeButton.style";
-
-function ThemeButton() {
-  const theme = useTheme();
-  const classes = useStyles();
+function ThemeButton({ theme, toggle }) {
   return (
-    <button onClick={theme.toggle} className={classes.root}>
-      Switch to {theme.type === "dark" ? "light" : "dark"} theme
+    <button onClick={toggle} className="button">
+      Switch to {theme === "dark" ? "light" : "dark"} theme
     </button>
   );
 }
