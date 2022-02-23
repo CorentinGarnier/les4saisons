@@ -8,7 +8,12 @@
 .season-title {
   margin: 0;
 }
-
+.text-black {
+  color: black;
+}
+.text-white {
+  color: white;
+}
 .season-subtitle {
   margin: 0;
 }
@@ -16,7 +21,9 @@
 .season-content {
   margin-top: 16px;
 }
-
+.season-duration {
+  font-size: 10px;
+}
 .season-icon {
   font-size: 64px;
   padding: 8px;

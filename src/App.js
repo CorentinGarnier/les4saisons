@@ -21,12 +21,12 @@ function App() {
       </header>
       <main className="main">
         <div className="content" data-testid="content">
-          <Season name={season[0]} />
+          <Season name={season[0]} theme={theme} />
         </div>
         <div className="" data-testid="actions">
           <Modal label="Et après ?">
             <Suspense fallback={<div>Loading...</div>}>
-              <NextSeason name={season[1].next} />
+              <NextSeason name={season[1].next} theme={theme} />
             </Suspense>
           </Modal>
         </div>
